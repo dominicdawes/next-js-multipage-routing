@@ -1,5 +1,6 @@
 import './globals.css'
 import Link from 'next/link'
+import NavBar from './nav-bar'  // custom componest used as <Comp_Name />
 
 export const metadata = {
   title: 'Create Next App',
@@ -10,19 +11,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <nav style={{ padding : "10px 0 10px 0"}}>
-          <Link href="/" style={{ padding : "0 5px 0 0"}}>
-            Home
-          </Link>
-          <Link href="/posts" style={{ padding : "0 5px 0 0"}}>
-            Posts
-          </Link>
-          <Link href="/users" style={{ padding : "0 5px 0 0"}}>
-            Users
-          </Link>
-        </nav>
-
-        {children} 
+        <NavBar />  
+        <div>{children}</div>
       </body>
     </html>
   )

@@ -1,4 +1,4 @@
-export default function Home() {
-    return <div>Posts Page</div>;
-  }
-  
+export default function Page() {
+
+    return<div>Select a post</div>
+}
